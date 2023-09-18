@@ -1,0 +1,121 @@
+<!--# Inicio de HTML -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Etiquetas Meta -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="Tu nombre" />
+
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="index, follow" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+
+    <!-- Etiqueta para favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- SEO para el buscador de Google -->
+    <title>Título de tu página</title>
+    <meta name="description" content="Descripción de tu página" />
+
+    <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
+    <meta property="og:title" content="Título de tu página" />
+    <meta property="og:description" content="Descripción de tu página" />
+    <meta
+        property="og:image"
+        content="URL de la imagen que quieres mostrar en las redes sociales"
+    />
+    <meta property="og:url" content="URL de tu página" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Título de tu página" />
+    <meta name="twitter:description" content="Descripción de tu página" />
+    <meta
+        name="twitter:image"
+        content="URL de la imagen que quieres mostrar en Twitter"
+    />
+
+    <!-- Código de las plataformas de Análisis -->
+    <script></script>
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+
+    <!-- Scripts a cargar antes de la renderización -->
+    <script src="preloader.js"></script>
+</head>
+<body>
+    <!-- HEADER, zona superior que se repite en todos los HTML -->
+    <header>
+        <!-- zona de repeticón,se repetite en cada página -->
+
+        <!-- banner -->
+        <picture class="header__banner"></picture>
+
+    </header>
+    <!-- MAIN, zona central diferente en todos los HTML, es el contenido diferenciador de las páginas -->
+    <main> 
+        <!-- Cambio de la página,los contenidos solo sale una vez -->
+        
+        <!-- Insertar dos imagenes para movil y escritorio -->
+        <!-- Imagen UNO,paisajeMovil01 -->
+        <picture class="main__imagen01">
+            <!-- smartphone -->
+            <source
+            srcset="
+            img/smartphone/paisajeMovil01.webp    1x,
+            img/smartphone/paisajeMovil01@2x.webp 2x,
+            img/smartphone/paisajeMovil01@3x.webp 3x
+            "
+            media="(min-width:320px) and (orientation:portrait)"
+            />
+            
+            <!-- desktop -->
+            <source
+                srcset="
+                    img/desktop/paisajeEscritorio01.webp    1x,
+                    img/desktop/paisajeEscritorio01@2x.webp 2x
+                "
+                media="(min-width:1000px)"
+            />
+            <img src="" alt="nubes altas entre montañas" />
+        </picture>
+
+        <!-- Imagen DOS,paisajeMovil02 -->
+        <picture class="main__imagen02">
+            <!-- smartphone -->
+            <source
+            srcset="
+            img/smartphone/paisajeMovil02.webp    1x,
+            img/smartphone/paisajeMovil02@2x.webp 2x,
+            img/smartphone/paisajeMovil02@3x.webp 3x
+            "
+            media="(min-width:320px) and (orientation:portrait)"
+            />
+            
+            <!-- desktop -->
+            <source
+                srcset="
+                    img/desktop/paisajeEscritorio02.webp    1x,
+                    img/desktop/paisajeEscritorio02@2x.webp 2x
+                "
+                media="(min-width:1000px)"
+            />
+            <img src="" alt="nubes altas entre montañas" />
+        </picture>
+
+        
+
+    </main>
+    <!-- FOOTER, zona inferior que se repite en todos los HTML -->
+    <footer>
+        <!-- zona de repeticón -->
+
+    </footer>
+</body>
+
+
+</html>
