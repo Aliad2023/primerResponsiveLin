@@ -52,18 +52,21 @@
     <header>
         <!-- zona de repeticón,se repetite en cada página -->
 
-        <!-- banner -->
+        <!-- banner (background-image)-->
         <picture class="header__banner"></picture>
 
     </header>
     <!-- MAIN, zona central diferente en todos los HTML, es el contenido diferenciador de las páginas -->
     <main> 
+        <section class="main__imagenes">
         <!-- Cambio de la página,los contenidos solo sale una vez -->
         
         <!-- Insertar dos imagenes para movil y escritorio -->
         <!-- Imagen UNO,paisajeMovil01 -->
         <picture class="main__imagen01">
             <!-- smartphone -->
+
+            <!-- Es una busqueda de recurso para buscar imagenes -->
             <source
             srcset="
             img/smartphone/paisajeMovil01.webp    1x,
@@ -81,7 +84,9 @@
                 "
                 media="(min-width:1000px)"
             />
-            <img src="" alt="nubes altas entre montañas" />
+
+            <!-- por ultimo,va a elegir quién es el ganador,para mostrar la imagen correspondiente -->
+            <img src="" alt="bosque bonito bosque" />
         </picture>
 
         <!-- Imagen DOS,paisajeMovil02 -->
@@ -104,10 +109,17 @@
                 "
                 media="(min-width:1000px)"
             />
-            <img src="" alt="nubes altas entre montañas" />
+            <img src="" alt="lago bonito lago" />
         </picture>
-
         
+    </section>
+        
+        <section class="main__textoTitulo">
+            <h3 class="main__titulo">Título</h3>
+            <p class="main__parrafo">Lorem ipsum dolor sit amet consectetur. Facilisis enim interdum pulvinar sodales in dignissim at metus nisl. Purus nunc pellentesque egestas cursus nullam urna. Aliquet ultrices rhoncus at sagittis morbi hendrerit. Pharetra neque dolor diam aenean lacinia. Enim enim sit est pharetra. Scelerisque pharetra lacus proin elementum sed. Pretium elit nulla aliquet ut. Aliquam duis sem facilisi ipsum. Aliquet turpis vitae blandit et dictum odio sed et volutpat. At vitae quis condimentum adipiscing egestas. Leo aliquet faucibus morbi elit.
+                Diam amet diam elementum sed. Proin a vel in laoreet leo lobortis diam sed viverra. Lectus sit risus placerat eget. Penatibus nunc feugiat nam tellus sed sagittis aliquam varius viverra. Parturient pellentesque luctus lectus nunc fringilla eget neque. Neque augue risus donec viverra amet tellus justo ac ipsum.</p>
+            <span></span>
+        </section>
 
     </main>
     <!-- FOOTER, zona inferior que se repite en todos los HTML -->
