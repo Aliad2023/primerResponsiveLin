@@ -14,7 +14,7 @@ header{
     /* Es importante para que la imagen sale en la página */
     display: block;
     /* width: 100%; */
-    background-color: red;
+    /* background-color: red; */
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,8 +50,10 @@ header{
     
 } */
 @media only screen and (min-width: 320px) and (max-width: 500px) and (orientation: portrait) {
-    @media (-webkit-min-device-pixel-ratio: 1){
-        background-image: url(../img/BannerMovil.webp);
+    @media (-webkit-min-device-pixel-ratio: 1) 
+    /* and (-moz-min-device-pixel-ratio: 1) */
+     {
+        background-image: url(../img/bannerMovil.webp);
     }
 
     @media (-webkit-min-device-pixel-ratio: 2) {
@@ -63,10 +65,16 @@ header{
     }
 }
 
-/* Escritorio */
+/* Escritorio */ 
 @media only screen and (min-width: 501px) {
+
+    /* Altura cambia */
     height: 400px; /* Altura común para ambos casos */
+
+    @media (-webkit-min-device-pixel-ratio: 1){
+    /* and (-moz-min-device-pixel-ratio: 1) */
     background-image: url(../img/bannerEscritorio.webp);
+}
     @media (-webkit-max-device-pixel-ratio: 2) {
         background-image: url(../img/desktop/bannerEscritorio@2x.webp);
     }
@@ -84,7 +92,8 @@ header{
     main{
         display: grid;
         /* grid-template-columns: repeat(2,100px); */
-        grid-template-columns: repeat(2,1fr);
+
+        /* grid-template-columns: repeat(2,1fr); */
 
         /* Gestiona las columnas automáticamente */
         grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
